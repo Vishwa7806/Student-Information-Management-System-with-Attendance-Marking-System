@@ -9,6 +9,9 @@ Step 4: Choose the "attendance.sql" file from the folder name "sql" inside the h
 Step 5: Click the import button
 
 
+Go open the project search 
+localhost/Homepage in your browser
+
 1) Admin User Credentials
 
 	Username - Admin@123
