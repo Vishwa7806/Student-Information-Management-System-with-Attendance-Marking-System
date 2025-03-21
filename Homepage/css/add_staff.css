@@ -1,0 +1,141 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Soft blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #2c3e50, #4ca1af);    color: white;
+    position: fixed;
+    padding: 30px 20px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    background: #1abc9c;
+    transform: translateX(10px);
+}
+
+
+.main-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff; /* White card */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 220px;
+    overflow: hidden;
+}
+
+header {
+    background-color: blue; /* Green header */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.form-container {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group input:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+.submit-btn {
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+}

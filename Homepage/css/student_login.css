@@ -1,0 +1,76 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Background with Image */
+body {
+  background: url('../images/student_background.png') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end; /* Moves form to the right */
+  align-items: center;
+  height: 100vh;
+  padding-right: 10%;
+}
+
+/* Login Container */
+.login-container {
+  background: rgba(255, 255, 255, 0.9); /* Light background with slight transparency */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+/* Heading */
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Fields */
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Login Button */
+.login-btn {
+  width: 100%;
+  background-color: #007BFF;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Extra Links */
+.extra-links {
+  margin-top: 10px;
+}
+
+.extra-links a {
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.extra-links a:hover {
+  text-decoration: underline;
+}

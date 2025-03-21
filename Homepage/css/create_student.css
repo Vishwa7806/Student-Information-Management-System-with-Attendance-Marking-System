@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #343a40, #495057);
+    position: fixed;
+    padding: 30px 20px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    background: #1abc9c;
+    transform: translateX(10px);
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-left: 470px; /* Increased margin-left to move form further from sidebar */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}

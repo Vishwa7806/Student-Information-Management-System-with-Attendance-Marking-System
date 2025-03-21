@@ -1,0 +1,214 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 180px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #2c3e50, #4ca1af);    color: white;
+    position: fixed;
+    padding: 30px 20px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    background: #1abc9c;
+    transform: translateX(10px);
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+header h1 {
+    margin-top:10px;
+    position: fixed;
+    color: #333;
+}
+
+
+/* Filter Section */
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 60px;  /* Fixed position below header */
+    left: 220px;
+    right: 0;
+    z-index: 1000;
+    background-color: transparent;
+    padding: 10px;
+    
+}
+
+.filter-group {
+    flex: 1;
+    min-width: 200px;
+    background-color: transparent;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Search Bar */
+.search-box {
+    position: fixed;
+    top: 125px;
+    left: 220px;
+    width: calc(100% - 240px);
+    z-index: 1000;
+    background-color: transparent;
+    padding: 10px;
+    
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Table Styling */
+/* Table Container - Enables Scroll */
+.table-container {
+    position: fixed;
+    top: 180px;  /* Adjust this based on search box position */
+    left: 220px;  /* Align with the sidebar */
+    right: 0;
+    bottom: 80px;  /* Leaves space for pagination */
+    overflow-y: auto;  /* Enables vertical scrolling */
+    background: white;  /* Optional: Ensures table visibility */
+    padding: 10px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    word-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+th {
+    background-color: green;
+    color: white;
+}
+
+/* Ensure the page doesn't scroll */
+body {
+    overflow: hidden;
+}
+
+
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Pagination Controls */
+.bottom-controls {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    position: fixed;           /* Fixed position */
+    bottom: 20px;              /* Position at the bottom */
+    left: 230px;                /* Align it to the left */
+    z-index: 1000;             /* Ensure it's above other content */
+}
+
+/* Dropdown for Rows Per Page */
+.pagination-dropdown {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.pagination-buttons button {
+    padding: 8px 16px;
+    background-color: purple; /* Matches the content background */
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.pagination-buttons button:hover {
+    background-color: powderblue;
+}
+
+.pagination-buttons button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Export Button */
+.export-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}  

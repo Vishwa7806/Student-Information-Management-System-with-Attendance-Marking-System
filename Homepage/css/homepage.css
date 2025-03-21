@@ -1,0 +1,154 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9; /* Soft background */
+  color: #333; /* Neutral text color */
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #0066cc; /* Blue header */
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #ffcc00; /* Amber hover effect */
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h2 {
+  font-size: 28px;
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Login Gateway Styling */
+.gateway-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.gateway {
+  text-decoration: none;
+  background-color: #0066cc;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.gateway:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
+}
+
+/* Features Section */
+/* Features Section */
+.features {
+  text-align: center;
+  padding: 60px 20px; /* Increased padding for better spacing */
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.features h3 {
+  font-size: 26px; /* Larger font for the heading */
+  color: #333; /* Darker heading color for emphasis */
+  margin-bottom: 30px; /* More spacing below heading */
+}
+
+.features-grid {
+  display: grid; /* Changed to grid for a responsive layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusts based on screen size */
+  gap: 30px; /* Spacing between items */
+  justify-content: center; /* Center-align items */
+  padding: 0 20px; /* Extra padding for smaller screens */
+}
+
+.feature {
+  text-align: center;
+  background-color: white; /* White background for individual features */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Internal spacing */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.feature img {
+  width: 100%;
+  max-height: 200px; /* Restrict image height for uniformity */
+  border-radius: 8px; /* Rounded edges */
+  margin-bottom: 15px; /* Spacing below the image */
+}
+
+.feature h4 {
+  font-size: 20px; /* Larger title font */
+  margin: 10px 0 5px;
+  color: #0066cc; /* Consistent blue for feature titles */
+}
+
+.feature p {
+  font-size: 16px; /* Clearer text */
+  color: #555; /* Neutral gray for text */
+  margin: 0;
+}
+
+/* Footer Styling */
+.footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #0066cc;
+  color: white;
+  font-size: 14px;
+}

@@ -1,0 +1,281 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9e4ea;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #343a40, #495057);
+    position: fixed;
+    padding: 30px 20px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    background: #1abc9c;
+    transform: translateX(10px);
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    width: calc(100% - 250px);
+    background: #0d47a1; /* Deep blue */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    z-index: 1000;
+}
+
+.header-left h1 {
+    font-size: 22px;
+}
+
+/* Admin Icon */
+.admin-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.admin-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #4caf50;
+    cursor: pointer;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 120px;
+    text-align: center;
+    top: 45px;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background: #ddd;
+}
+
+/* Dashboard Cards */
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.card, .column {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.card h3, .column h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Table Styling */
+.queries-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.queries-section th, .queries-section td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.queries-section th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+.queries-section tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.queries-section tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Status Badge */
+.status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.status-badge.pending {
+    background-color: orange;
+}
+
+.status-badge.in-progress {
+    background-color: #ffcc00;
+}
+
+.status-badge.resolved {
+    background-color: green;
+}
+
+.status-badge.not-processed {
+    background-color: red;
+}
+
+/* Status Dropdown */
+select.status-dropdown {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #fff;
+}
+
+/* Status Dropdown Colors */
+select.pending {
+    background-color: orange;
+}
+
+select.in-progress {
+    background-color: #ffcc00;
+}
+
+select.resolved {
+    background-color: green;
+}
+
+select.status-dropdown:hover {
+    background-color: #f0f0f0;
+}
+
+select.status-dropdown:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+}
+
+select[disabled] {
+    background-color: #e0e0e0;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Content */
+.content h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100px;
+    }
+
+    .main-content {
+        margin-left: 100px;
+    }
+
+    .header-left h1 {
+        font-size: 16px;
+    }
+}

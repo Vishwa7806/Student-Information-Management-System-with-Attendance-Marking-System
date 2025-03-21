@@ -1,0 +1,187 @@
+body
+{
+background-color: lightgray;
+}
+/* Sidebar styling */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #2c3e50, #4ca1af);    color: white;
+    position: fixed;
+    padding: 30px 20px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    background: #1abc9c;
+    transform: translateX(10px);
+}
+
+.close-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Add Staff Button */
+.add-staff-button-container {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.add-staff-button {
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.add-staff-button:hover {
+    background: #218838;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #000201;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+/* Edit Button */
+.edit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.edit-button:hover {
+    background-color: #45a049;
+}
+
+/* Delete Button */
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #e53935;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: white;
+    width: 40%;
+    padding: 20px;
+    margin: 10% auto;
+    border-radius: 5px;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+/* Modal Form */
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label {
+    margin: 8px 0 5px;
+    font-weight: bold;
+}
+
+.modal-content input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background: #0056b3;
+}

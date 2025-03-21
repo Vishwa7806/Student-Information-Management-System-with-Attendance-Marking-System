@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd; /* Light blue-gray background */
+    color: #333;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #2c3e50, #4ca1af);    color: white;
+    position: fixed;
+    padding: 30px 20px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    background: #1abc9c;
+    transform: translateX(10px);
+}
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    width: calc(100% - 250px);
+    background: #0d47a1; /* Deep blue */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    z-index: 1000;
+}
+
+.header-left h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    margin-top: 60px; /* Offset for fixed header */
+    padding: 20px;
+}
+
+/* Admin Icon */
+.admin-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.admin-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #1e88e5;
+    cursor: pointer;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 120px;
+    text-align: center;
+    top: 45px;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background: #ddd;
+}
+
+/* Row and Columns for Dashboard Cards */
+.row {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.card, .column {
+    background: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.card h3, .column h3 {
+    margin-bottom: 15px;
+    color: #0d47a1;
+}
+
+/* Table Styling */
+.queries-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.queries-section th, .queries-section td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.queries-section th {
+    background-color: #1565c0;
+    color: white;
+    text-transform: uppercase;
+}
+
+.queries-section tr:nth-child(even) {
+    background-color: #f1f8ff;
+}
+
+
+
+/* Status Text Color Based on Status Value */
+.queries-section td.status.pending {
+    color: #ff9800; /* Orange text for Pending */
+}
+
+.queries-section td.status.in-progress {
+    color: #ffcc00; /* Yellow text for In Progress */
+}
+
+.queries-section td.status.resolved {
+    color: #4caf50; /* Green text for Resolved */
+}
+
+/* Chart Section */
+.chart-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#studentDataChart {
+    width: 100% !important;
+    height: 400px;
+}

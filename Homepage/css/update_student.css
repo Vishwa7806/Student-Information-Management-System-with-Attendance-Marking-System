@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    margin-top: 1750px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    max-width: 900px;
+}
+
+h2 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    color: #4CAF50;
+}
+
+label {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+input[type="text"], input[type="email"], input[type="date"], textarea {
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Common button styles */
+.btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 12px 24px; /* Padding for size */
+    text-align: center; /* Center align text */
+    text-decoration: none; /* No underline for the link */
+    display: inline-block; /* Display as inline block */
+    font-size: 16px; /* Font size */
+    margin: 8px 0; /* Margin to separate the buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Focus effect for accessibility */
+.btn:focus {
+    outline: none; /* Removes default focus outline */
+    box-shadow: 0 0 5px #4CAF50; /* Green outline on focus */
+}

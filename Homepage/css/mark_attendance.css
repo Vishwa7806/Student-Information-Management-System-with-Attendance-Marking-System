@@ -1,0 +1,199 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #343a40, #495057);
+    position: fixed;
+    padding: 30px 20px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    background: #1abc9c;
+    transform: translateX(10px);
+}
+
+
+/* Container for the Form */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Needed for absolute positioning of the button */
+    margin-left: 330px;
+}
+
+/* Title */
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Label Styles */
+label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Select Input Fields */
+select, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+select:focus, button:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+/* Button Styles */
+button {
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    font-size: 0.9rem; /* Smaller font size */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    padding: 8px 15px; /* Smaller padding */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Mark Attendance Button (Top Right Corner) */
+#markAttendanceBtn {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: blue;
+    color: white;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+/* Table Row Hover Effect */
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Radio Button Styles */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Disabled Elements */
+select:disabled, button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+/* Success Alert Style */
+.success-alert {
+    padding: 15px;
+    background-color: #4caf50;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    button, select {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

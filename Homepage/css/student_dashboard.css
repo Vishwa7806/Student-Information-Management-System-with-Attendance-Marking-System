@@ -1,0 +1,239 @@
+/* Sidebar styling */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #2c3e50;
+    color: white;
+    position: fixed;
+    padding: 30px 20px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    background: #1abc9c;
+    transform: translateX(10px);
+}
+
+/* Main content styling */
+.main-content {
+    margin-left: 220px;
+    padding: 0;
+    padding-top: 70px; /* Ensures content starts below fixed header */
+}
+
+/* Header styling */
+header {
+    width: calc(100% - 220px);
+    margin: 0;
+    background: #34495e;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 260px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Buttons section styling */
+.button-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 150px;
+    margin-top: 40px; /* Ensures buttons appear below the header */
+}
+.animated-btn {
+    padding: 18px 35px;
+    border: none;
+    background: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.animated-btn:hover {
+    transform: scale(1.1);
+    background: #2980b9;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Details display section */
+#details-container {
+    margin-left: 115px;
+    margin-top: 45px;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Each data block */
+.details {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: calc(50% - 15px); /* Two-column layout */
+}
+
+/* Hover effect for each section */
+.details:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for labels and values */
+.details-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px; /* Increased gap to ensure spacing between textboxes */
+}
+
+.details-content div {
+    flex: 1;
+    min-width: 220px; /* Ensure enough width */
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+.details-content div label {
+    font-size: 18px;
+    color: #2980b9;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Non-editable input fields styling */
+.details-content div input {
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: #ecf0f1;
+    color: #34495e;
+    text-align: center;
+    cursor: not-allowed;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 20px; /* Ensures space below each input */
+}
+
+/* Details Header Styling */
+.details-header {
+    background-color: #2980b9;
+    color: white;
+    font-size: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Making paragraphs and content cleaner */
+.details-content p {
+    font-size: 18px;
+    color: #34495e;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.details p strong {
+    color: #2980b9;
+    font-weight: bold;
+}
+
+.details p span {
+    color: #7f8c8d;
+    font-size: 16px;
+}
+
+/* For paragraphs */
+.details p {
+    font-size: 18px;
+    color: #34495e;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Make the details section visually clean */
+.details p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Button container styling (unchanged) */
+.button-container {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    gap: 10px; /* Space between buttons */
+    margin-bottom: 10px; /* Space between rows of buttons */
+}
+
+/* Verify button container for right alignment */
+.verify-button-container {
+    display: flex;
+    justify-content: flex-end; /* Align the Verify Data button to the right */
+    margin-top: 10px; /* Add space above the new line of buttons */
+}
+
+/* Styling for the Verify Data button */
+.verify-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Show pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for Verify Data button */
+.verify-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Disabled button styling */
+.verify-btn:disabled {
+    background-color: #d3d3d3; /* Light gray background when disabled */
+    cursor: not-allowed; /* Change cursor to indicate the button is disabled */
+    color: #a1a1a1; /* Gray text color */
+}

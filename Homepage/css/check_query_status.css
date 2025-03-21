@@ -1,0 +1,146 @@
+/* Reset default margins and padding for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Sidebar styling */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #2c3e50;
+    color: white;
+    position: fixed;
+    padding: 30px 20px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    background: #1abc9c;
+    transform: translateX(10px);
+}
+
+
+
+
+/* Container for the content */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    margin-left: 330px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading for the page */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Header styling */
+th {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Row styling */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Status color classes */
+.status.pending {
+    color: #ff9800; /* Orange for Pending */
+}
+
+.status.in-progress {
+    color: #ffcc00; /* Yellow for In Progress */
+}
+
+.status.resolved {
+    color: #4caf50; /* Green for Resolved */
+}
+
+/* Message for no queries */
+p {
+    font-size: 18px;
+    text-align: center;
+    color: #777;
+}
+
+/* Additional styling for links (if any file link is available) */
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
